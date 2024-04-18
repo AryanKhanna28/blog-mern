@@ -64,6 +64,7 @@ h1{
 
 h2{
     font-size: 1.9rem;
+   
 }
 
 h3{
@@ -138,6 +139,30 @@ img{
     margin-top: 3rem;
 }
 
+.cross_button{
+    display: none;
+}
+
+
+#selected{
+    background-color: white ;
+    color:#0c0c22;
+}
+
+/* Page */
+
+.page{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.main{
+    flex: 1;
+}
+
+footer{
+    margin-top: auto;
+}
 
 
 
@@ -150,7 +175,7 @@ img{
 /* ===========NAVBAR =========*/
 nav{
     width: 100vw;
-    height: 5rem;
+    height: 6.4rem;
     display: grid;
     place-items:  center;
     background: var(255,255,255,0.5);
@@ -160,6 +185,7 @@ nav{
     z-index: 1;
     border-bottom: 4px solid var(--color-bg);
     backdrop-filter: blur(20px);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);;
 }
 
 .nav__container{
@@ -173,6 +199,10 @@ nav{
 .nav__logo{
     width:3rem;
     display: block;
+    img{
+        border-radius: 50%;
+        margin-top: .2rem;
+    }
 }
 
 .nav__menu{
@@ -187,7 +217,7 @@ nav{
 
 
 section{
-    margin-top: 6rem;
+    margin-top: 9rem;
 }
 
 .container{
@@ -209,7 +239,8 @@ section{
 footer{
     background: var(--color-gray-900);
     margin-top: 6rem;
-    padding-top: 6rem;
+    
+    
 
 }
 
@@ -218,7 +249,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom:4rem ;
+    margin:1rem auto  2rem auto;
 }
 
 .footer__categories a{
@@ -444,7 +475,7 @@ input, select, textarea{
     padding: 1rem;
     border-radius: var(--radius-3);
     display: flex;
-  
+    margin-bottom: 8.95rem;
     gap: 1rem;
     transition: var(--transition);
 }
@@ -713,6 +744,7 @@ input, select, textarea{
         width: 100%;
     }
 
+
     .form.profile__form{
         margin-top: 2.5rem;
         width: 100%;
@@ -733,6 +765,10 @@ input, select, textarea{
 
     .dashboard__post-thumbnail{
         width: 5rem;
+    }
+
+    .cross_button{
+        display: block;
     }
     
 
